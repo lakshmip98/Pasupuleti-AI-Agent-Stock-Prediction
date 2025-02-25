@@ -14,11 +14,11 @@ from Indicators.adx_indicator import ADXIndicator
 st.title("ADX Calculation - Real-Time & Historical Data")
 
 # Input fields for stock symbol
-symbol = st.text_input("Enter Stock Symbol:", value="AAPL")
+symbol = st.text_input("Enter Stock Symbol:", value="NVDA")
 
 # Date range selection for historical data
 start_date = st.date_input("Select Start Date:", value=datetime.date(2021, 1, 1))
-end_date = st.date_input("Select End Date:", value=datetime.date(2022, 1, 1))
+end_date = st.date_input("Select End Date:", value=datetime.date(2025, 2, 12))
 
 # Use session state to store fetched data
 if 'stock_data' not in st.session_state:
